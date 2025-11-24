@@ -18,8 +18,9 @@
   -->
 </head>
 <body>
+    <div class="background-image"></div>
   <header class="site-header">
-    <div class="logo">DJ</div>
+
 
     <!-- Your original navbar markup preserved exactly as provided -->
     <nav>

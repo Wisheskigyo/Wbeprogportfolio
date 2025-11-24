@@ -17,13 +17,12 @@ header nav {
 /* Make the UL a horizontal flex container and remove default list spacing */
 header nav > ul {
   display: flex !important;
-  gap: 18px !important;
+  gap: 21px !important;
   align-items: center !important;
   justify-content: center !important;
   padding: 8px 14px !important;
   margin: 0 !important;
   list-style: none !important;
-  overflow: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
 

@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="logo">DJ</div>
+    
         <nav>
             <ul>
                 <a href="/index.php" class="nav-item active">Főoldal</a>
@@ -31,8 +31,7 @@
             </ul>
         </nav>
     </header>
-    <div class="bg-layer layer-back"></div>
-    <div class="bg-layer layer-mid"></div>
+   
 <div class="leiras" ;>
     Üdvözöllek a weboldalamon!
     <p>Itt megtalálsz pár hasznos információt rólam és munkásságaimról.</p>

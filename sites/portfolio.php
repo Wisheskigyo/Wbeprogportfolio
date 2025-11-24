@@ -12,8 +12,8 @@
     <meta name="robots" content="index, follow">
 </head>
 <body>
+  <div class="background-image"></div>
     <header class="site-header">
-        <div class="logo">DJ</div>
         <nav>
             <ul>
                 <a href="/index.php" class="nav-item">Főoldal</a>
