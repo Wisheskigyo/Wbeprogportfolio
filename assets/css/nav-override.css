@@ -3,21 +3,8 @@
    The active link should have class="nav-item active"
 */
 
-/* Reset base styling if needed */
-nav {
-  max-width: 1200px !important;
-  margin: 22px auto !important;
-  padding: 10px !important;
-  border-radius: 36px !important;
-  background: linear-gradient(180deg, rgba(6,6,8,0.72), rgba(18,18,20,0.56)) !important;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02) !important;
-  -webkit-backdrop-filter: blur(6px) !important;
-  backdrop-filter: blur(6px) !important;
-  z-index: 120 !important;
-  display: block !important;
-}
-
-/* Also target header nav for pages that wrap nav inside header */
+/* Reset base styling for both standalone nav and nav inside header */
+nav,
 header nav {
   max-width: 1200px !important;
   margin: 22px auto !important;
