@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Hegedűs Levente Webprogramozás</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/design.css">
-    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hegedűs Levente">
     <meta name="description" content="Hegedűs Levente portfóliója: front end fejlesztő, készségek, tapasztalatok, elérhetőségek.">
     <meta name="robots" content="index, follow">
 </head>
-<body>
+<body>s
     <nav>
         <ul>
-            <a href="../sites/index.html" class="nav-item">Főoldal</a>
-            <a href="../sites/portfolio.html" class="nav-item active">Portfólió</a>
-            <a href="../sites/dj.html" class="nav-item">DJ Karrier</a>
-            <a href="../sites/aboutme.html" class="nav-item">Oldal 4</a>
-            <a href="../sites/aboutme.html" class="nav-item">Oldal 5</a>
-            <a href="../sites/blog.html" class="nav-item">Oldal 6</a>
-            <a href="../sites/services.html" class="nav-item">Oldal 7</a>
-            <a href="../sites/contact.html" class="nav-item">Kapcsolat</a>
+            <a href="/index.php" class="nav-item">Főoldal</a>
+            <a href="/sites/portfolio.php" class="nav-item active">Portfólió</a>
+            <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
+            <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
+            <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
+            <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
+            <a href="/sites/services.php" class="nav-item">Oldal 7</a>
+            <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
         </ul>
     </nav>
     <div class="wrap">
         <div class="card">
           <aside class="sidebar">
             <div class="profile-pic-container">
-                <img src="../source/Levi.jpg" alt="Hegedűs Levente" class="profile-pic">
+                <img src="/source/Levi.jpg" alt="Hegedűs Levente" class="profile-pic">
             </div>
             <h1 class="name">Hegedűs Levente</h1>
             <div class="subtitle">Front end fejlesztő</div>
@@ -119,10 +119,21 @@
         </div>
       </div>
     </body>
-    <footer style="position: fixed; bottom: 0; width: 100%;">
-        <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
-            <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
-            <span style="text-align: right;">Datum</span>
-        </div>
-    </footer>
+  <footer style="position: fixed; bottom: 0; width: 100%;">
+    <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
+        <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
+        <span style="text-align: right;" id="datetime"><?php include '/ora.php'; ?></span>
+        <script>
+        function updateDateTime() {
+            fetch('/ora.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('datetime').innerHTML = data;
+            });
+        }
+        setInterval(updateDateTime, 1);
+        </script>
+    </div>
+    
+</footer>
     </html>
