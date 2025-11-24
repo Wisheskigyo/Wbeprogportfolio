@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/design.css">
 
@@ -8,23 +9,16 @@
     <meta charset="UTF-8">
     <title>Hegedűs Levente Webprogramozás</title>
     <style>
-    body {
-    min-height: 100vh;
-    background-image: url('../source/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-    }
-     
+  
     </style>
     <meta name="author" content="Hegedűs Levente">
     <meta name="description" content="Hegedűs Levente portfóliója: front end fejlesztő, készségek, tapasztalatok, elérhetőségek.">
     <meta name="robots" content="index, follow">
 </head>
 <body>
-<nav>
+     <header class="site-header"><nav>
     <ul>
-        <a href="/index.php" class="nav-item active">Főoldal</a>
+        <a href="/index.php" class="nav-item ">Főoldal</a>
         <a href="/sites/portfolio.php" class="nav-item">Portfólió</a>
         <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
         <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
@@ -34,6 +28,9 @@
         <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
     </ul>
 </nav>
+</header>
+    <div class="bg-layer layer-back"></div>
+    <div class="bg-layer layer-mid"></div>
 <div class="leiras" ;>
     Üdvözöllek a weboldalamon!
     <p>Itt megtalálsz pár hasznos információt rólam és munkásságaimról.</p>
