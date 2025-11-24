@@ -11,6 +11,7 @@
   <!-- Styles -->
     
   <link rel="stylesheet" href="/css/dj.css" />
+  <link rel="stylesheet" href="/assets/css/nav-override.css" />
 
   <!-- NOTE:
     - Place your uploaded background image as `image.png` next to this file.
