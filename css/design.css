@@ -56,6 +56,30 @@ body::after{
   transform: translateZ(0) scale(1.03);
 }
 
+/* Header styling */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  background: linear-gradient(90deg, #00B2FF, #FF4DA6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Ensure main content sits above the decorative layers */
 .site-header,
 .main,
@@ -72,4 +96,97 @@ footer { z-index: 30; position: relative; }
 @media (max-width: 900px) {
   .bg-layer.layer-back { height: 45vh; opacity: 0.22; }
   .bg-layer.layer-mid  { top: 14vh; height: 56vh; opacity: 0.18; }
+}
+
+/* Navbar styling */
+header nav {
+  max-width: 1200px !important;
+  margin: 22px auto !important;
+  padding: 10px !important;
+  border-radius: 36px !important;
+  background: linear-gradient(180deg, rgba(6,6,8,0.72), rgba(18,18,20,0.56)) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
+  z-index: 120 !important;
+  display: block !important;
+}
+
+/* Make the UL a horizontal flex container and remove default list spacing */
+header nav > ul {
+  display: flex !important;
+  gap: 18px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 14px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+/* Hide the scrollbar while keeping scrollability */
+header nav > ul::-webkit-scrollbar { height: 8px; display: none; }
+header nav > ul { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* Style anchors as the pill items (works with your existing <a> inside <ul>) */
+header nav > ul > a.nav-item {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 28px !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial !important;
+  border-radius: 999px !important;
+  z-index: 2 !important;
+  transition: transform .18s ease, color .18s ease, box-shadow .18s ease !important;
+  white-space: nowrap !important;
+}
+
+/* decorative disc behind each pill */
+header nav > ul > a.nav-item::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: calc(100% + 20px) !important;
+  height: 44px !important;
+  border-radius: 999px !important;
+  z-index: 1 !important;
+  background: linear-gradient(180deg, rgba(12,12,12,0.85), rgba(18,18,18,0.55)) !important;
+  box-shadow: inset 0 6px 10px rgba(255,255,255,0.02), 0 10px 22px rgba(0,0,0,0.65) !important;
+  pointer-events: none !important;
+}
+
+/* hover */
+header nav > ul > a.nav-item:hover {
+  transform: translateY(-4px) !important;
+  color: #fff !important;
+}
+header nav > ul > a.nav-item:hover::before {
+  box-shadow: inset 0 8px 14px rgba(255,255,255,0.03), 0 18px 34px rgba(0,0,0,0.75) !important;
+}
+
+/* active pill */
+header nav > ul > a.nav-item.active {
+  color: #fafafa !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important;
+  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.65), 0 18px 40px rgba(0,0,0,0.7) !important;
+  transform: translateY(-4px) !important;
+}
+header nav > ul > a.nav-item.active::before {
+  width: calc(100% + 8px) !important;
+  height: 44px !important;
+  box-shadow: inset 0 6px 10px rgba(255,255,255,0.03), 0 14px 32px rgba(0,0,0,0.75) !important;
+}
+
+/* Mobile navbar tweaks (keep horizontal scroll) */
+@media (max-width: 900px) {
+  header nav { margin: 12px auto !important; padding: 8px !important; border-radius: 28px !important; }
+  header nav > ul { gap: 12px !important; padding: 6px 10px !important; }
+  header nav > ul > a.nav-item { padding: 9px 20px !important; font-size: 14px !important; }
 }
