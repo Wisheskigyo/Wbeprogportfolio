@@ -11,19 +11,26 @@
     <meta name="description" content="Hegedűs Levente portfóliója: front end fejlesztő, készségek, tapasztalatok, elérhetőségek.">
     <meta name="robots" content="index, follow">
 </head>
-<body>s
-    <nav>
-        <ul>
-            <a href="/index.php" class="nav-item">Főoldal</a>
-            <a href="/sites/portfolio.php" class="nav-item active">Portfólió</a>
-            <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
-            <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
-            <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
-            <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
-            <a href="/sites/services.php" class="nav-item">Oldal 7</a>
-            <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
-        </ul>
-    </nav>
+<body>
+    <header class="site-header">
+        <div class="logo">DJ</div>
+        <nav>
+            <ul>
+                <a href="/index.php" class="nav-item">Főoldal</a>
+                <a href="/sites/portfolio.php" class="nav-item active">Portfólió</a>
+                <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
+                <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
+                <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
+                <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
+                <a href="/sites/services.php" class="nav-item">Oldal 7</a>
+                <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Decorative vinyl groove layers (parallax) -->
+    <div class="bg-layer layer-back"></div>
+    <div class="bg-layer layer-mid"></div>
     <div class="wrap">
         <div class="card">
           <aside class="sidebar">

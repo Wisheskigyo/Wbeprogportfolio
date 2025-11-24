@@ -16,19 +16,21 @@
     <meta name="robots" content="index, follow">
 </head>
 <body>
-     <header class="site-header"><nav>
-    <ul>
-        <a href="/index.php" class="nav-item ">Főoldal</a>
-        <a href="/sites/portfolio.php" class="nav-item">Portfólió</a>
-        <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
-        <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
-        <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
-        <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
-        <a href="/sites/services.php" class="nav-item">Oldal 7</a>
-        <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
-    </ul>
-</nav>
-</header>
+    <header class="site-header">
+        <div class="logo">DJ</div>
+        <nav>
+            <ul>
+                <a href="/index.php" class="nav-item active">Főoldal</a>
+                <a href="/sites/portfolio.php" class="nav-item">Portfólió</a>
+                <a href="/sites/dj.php" class="nav-item">DJ Karrier</a>
+                <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
+                <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
+                <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
+                <a href="/sites/services.php" class="nav-item">Oldal 7</a>
+                <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
+            </ul>
+        </nav>
+    </header>
     <div class="bg-layer layer-back"></div>
     <div class="bg-layer layer-mid"></div>
 <div class="leiras" ;>
