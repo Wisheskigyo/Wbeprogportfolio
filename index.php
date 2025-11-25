@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/assets/css/nav-override.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
