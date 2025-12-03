@@ -1,0 +1,38 @@
+.linkek {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    padding: 32px;
+    max-width: 700px;
+    margin: 40px auto;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+    
+}
+
+.linkek a {
+    color: #fff !important;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+
+    a:hover {
+        color: #00B2FF;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+}
+.linkek:hover {
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+        transform: translateY(-4px) !important;
+    
+}

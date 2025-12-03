@@ -3,39 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DJ Prototype — Frosted Vinyl Theme</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-    
-  <link rel="stylesheet" href="/css/dj.css" />
-
-  <!-- NOTE:
-    - Place your uploaded background image as `image.png` next to this file.
-    - Replace `sample.mp3` with a real audio file (same folder) to test the player.
-  -->
+  <title>Hegedus Levenete Webprogramozás</title>   
+  <link rel="stylesheet" href="../css/dj.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/design.css">
+  
 </head>
 <body>
     <div class="background-image"></div>
-  <header class="site-header">
-
-
-    <!-- Your original navbar markup preserved exactly as provided -->
-    <nav>
-      <ul>
-        <a href="/index.php" class="nav-item ">Főoldal</a>
-        <a href="/sites/portfolio.php" class="nav-item">Portfólió</a>
-        <a href="/sites/dj.php" class="nav-item active">DJ Karrier</a>
-        <a href="/sites/aboutme.php" class="nav-item">Oldal 4</a>
-        <a href="/sites/aboutme.php" class="nav-item">Oldal 5</a>
-        <a href="/sites/blog.php" class="nav-item">Oldal 6</a>
-        <a href="/sites/services.php" class="nav-item">Oldal 7</a>
-        <a href="/sites/contact.php" class="nav-item">Kapcsolat</a>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+      <nav>
+        
+        <ul>
+          <a href="../index.php" class="nav-item ">Főoldal</a>
+          <a href="portfolio.php" class="nav-item ">Portfólió</a>
+          <a href="dj.php" class="nav-item active">DJ</a>
+          <a href="rave.php" class="nav-item">Hangár rave kultúra</a>
+          <a href="eszkozeim.php" class="nav-item">Eszközeim</a>
+          <a href="tervek.php" class="nav-item ">Tervek</a>
+          <a href="linkek.php" class="nav-item">Hasznos linkek</a>
+          <a href="kapcsolatok.php" class="nav-item">Kapcsolat</a>
+        </ul>
+      </nav>
+     </header>
 
   <main class="main">
     <!-- Decorative vinyl groove layers (parallax) -->
@@ -55,38 +46,49 @@
     </section>
 
     <!-- Music grid -->
-    <section id="music" class="section">
-      <h2 class="section-title">Mixek & Repertoár</h2>
-      <div class="grid">
-        <article class="mix-card" tabindex="0" data-track="sample.mp3">
-          <div class="cover" aria-hidden="true"></div>
-          <div class="mix-meta">
-            <div class="mix-title">Latest Set</div>
-            <div class="mix-tags">House · Techno</div>
-          </div>
-          <button class="play-overlay" aria-label="Play Latest Set">▶</button>
-        </article>
-
-        <!-- Placeholder cards -->
-        <article class="mix-card placeholder" tabindex="0" data-track="sample.mp3">
-          <div class="cover"></div>
-          <div class="mix-meta">
-            <div class="mix-title">Set #2</div>
-            <div class="mix-tags">Downtempo</div>
-          </div>
-          <button class="play-overlay" aria-label="Play Set #2">▶</button>
-        </article>
-
-        <article class="mix-card placeholder" tabindex="0" data-track="sample.mp3">
-          <div class="cover"></div>
-          <div class="mix-meta">
-            <div class="mix-title">Set #3</div>
-            <div class="mix-tags">Minimal</div>
-          </div>
-          <button class="play-overlay" aria-label="Play Set #3">▶</button>
-        </article>
+   <section id="music" class="section">
+  <h2 class="section-title">Mixek & Repertoár</h2>
+  <div class="grid">
+    <article class="mix-card" tabindex="0"
+             data-src="/music/music3.wav"
+             data-art="/source/indu.jpg"
+             data-title="Industrial"
+             data-artist="Live Mix">
+      <div class="cover" style="background-image:url('/source/indu.jpg')" aria-hidden="true"></div>
+      <div class="mix-meta">
+        <div class="mix-title">Industrial</div>
+        <div class="mix-tags">Industrial · Techno</div>
       </div>
-    </section>
+      <button class="play-overlay" aria-label="Play Industrial">▶</button>
+    </article>
+
+    <article class="mix-card" tabindex="0"
+             data-src="/music/music1.wav"
+             data-art="/source/house.jpg"
+             data-title="Avicii x Fake ID"
+             data-artist="Edit / Mashup">
+      <div class="cover" style="background-image:url('/source/house.jpg')" aria-hidden="true"></div>
+      <div class="mix-meta">
+        <div class="mix-title">Avicii x Fake ID</div>
+        <div class="mix-tags">House · Bootleg</div>
+      </div>
+      <button class="play-overlay" aria-label="Play Avicii x Fake ID">▶</button>
+    </article>
+
+    <article class="mix-card" tabindex="0"
+             data-src="/music/music2.wav"
+             data-art="/source/balkan.png"
+             data-title="02CKE BEOGRADSKE"
+             data-artist="Balkan Set">
+      <div class="cover" style="background-image:url('/source/balkan.png')" aria-hidden="true"></div>
+      <div class="mix-meta">
+        <div class="mix-title">CKE BEOGRADSKE</div>
+        <div class="mix-tags">Balkan · World</div>
+      </div>
+      <button class="play-overlay" aria-label="Play 02CKE BEOGRADSKE">▶</button>
+    </article>
+  </div>
+</section>
 
     <!-- Gigs -->
     <section id="gigs" class="section">
@@ -98,6 +100,15 @@
             <h3>Club Night — Budapest</h3>
             <p>Venue: Sample Club • Tickets: <a href="#" target="_blank" rel="noopener">Buy</a></p>
           </div>
+          
+        </div>
+        <div class="event-card card">
+          <div class="event-date">2025-12-06</div>
+          <div class="event-info">
+            <h3>Hungi — Szeged</h3>
+            <p>Venue: Sample Club • Tickets: <a href="#" target="_blank" rel="noopener">Buy</a></p>
+          </div>
+          
         </div>
       </div>
     </section>
@@ -140,12 +151,27 @@
     </div>
 
     <audio id="audio" preload="metadata">
-      <source src="sample.mp3" type="audio/mpeg">
+      <source src="/music/industrial.wav" type="audio/wav">
       <!-- Replace sample.mp3 with your real audio file -->
       Your browser does not support the audio element.
     </audio>
   </aside>
-
-  <script src="app.js"></script>
+  <footer style=" bottom: 0; width: 100%;">
+    <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
+        <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
+        <span style="text-align: right;" id="datetime"><?php include '../ora.php'; ?></span>
+        <script>
+        function updateDateTime() {
+            fetch('../ora.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('datetime').innerHTML = data;
+            });
+        }
+        setInterval(updateDateTime, 1000);
+        </script>
+    </div>
+    
+</footer>
 </body>
 </html>

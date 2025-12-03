@@ -1,0 +1,114 @@
+.leiras-rave {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    padding: 32px;
+    max-width: 50%;
+    margin: 40px auto;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.rave-title {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 48px;
+  margin-bottom: 18px;
+  text-shadow: 0 0 16px #00fff7, 0 0 32px #ff00ea;
+}
+
+.rave-wave {
+  width: 100%;
+  height: 32px;
+  background: linear-gradient(90deg, #00fff7 0%, #ff00ea 100%);
+  opacity: 0.7;
+  border-radius: 0 0 32px 32px;
+  filter: blur(2px);
+  margin-bottom: 32px;
+  animation: rave-wave-move 3s linear infinite alternate;
+}
+
+@keyframes rave-wave-move {
+  0% { filter: blur(2px) brightness(1.1); }
+  100% { filter: blur(4px) brightness(1.3); }
+}
+
+.rave-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+  max-width: 1100px;
+}
+
+.rave-card {
+  background: linear-gradient(135deg, rgba(0,255,247,0.13) 0%, rgba(255,0,234,0.13) 100%);
+  border: 2px solid #00fff7;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  min-width: 260px;
+  max-width: 340px;
+  color: #fff;
+  font-size: 1.08rem;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
+}
+.rave-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 40px 0 #ff00ea44;
+  border: 2px solid #ff00ea;
+}
+.rave-cards1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+  max-width: 1100px;
+}
+
+.rave-card1 {
+  background: linear-gradient(135deg, rgba(0,255,247,0.13) 0%, rgba(255,0,234,0.13) 100%);
+  border: 2px solid #00fff7;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  min-width: 260px;
+  max-width: 75%;
+  color: #fff;
+  font-size: 1.08rem;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
+}
+.rave-card1:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 40px 0 #ff00ea44;
+  border: 2px solid #ff00ea;
+}
+.rave-card h2 {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #00fff7;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px #00fff7;
+}
+
+.rave-card .rave-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  filter: drop-shadow(0 0 8px #00fff7);
+}
+
+@media (max-width: 900px) {
+  .rave-cards { flex-direction: column; align-items: center; gap: 18px; }
+  .rave-card { min-width: 0; max-width: 98vw; }
+}
