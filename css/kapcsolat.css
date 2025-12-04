@@ -1,0 +1,60 @@
+.links-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.links-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 2px 8px #000;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.link-item i {
+    font-size: 1.8rem;
+    color: #00fff7;
+    transition: color 0.2s;
+}
+
+.link-item:hover, .link-item:focus {
+    background: rgba(0,234,255,0.15);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.link-item:hover i, .link-item:focus i {
+    color: #fff;
+}

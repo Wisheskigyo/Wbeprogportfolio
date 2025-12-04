@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/design.css">
-
+    <link rel="stylesheet" href="../css/kapcsolat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <title>Hegedűs Levente Webprogramozás</title>
@@ -34,8 +35,37 @@
                 </ul>
       </nav>
 </header>
+<main class="links-main">
+        <h1 class="links-title">Hasznos linkek</h1>
+        <ul class="links-list">
+            <li>
+                <a href="https://www.facebook.com/levente.hegedus.165928/" target="_blank" class="link-item">
+                    <i class="fa-brands fa-facebook" "></i>
+                    Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Wisheskigyo" target="_blank" class="link-item">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_dj.lexx_/" target="_blank" class="link-item">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://discordapp.com/users/525395276500828180" target="_blank" class="link-item">
+                   <i class="fa-brands fa-discord"></i>
+                    Discord
+                </a>
+            </li>
+        </ul>
+    </main>
 </body>
- <footer style=" bottom: 0; width: 100%;">
+ <footer style=" bottom: 0; width: 100%; position: fixed;">
     <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
         <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
         <span style="text-align: right;" id="datetime"><?php include '../ora.php'; ?></span>
