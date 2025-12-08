@@ -36,7 +36,7 @@
       </nav>
 </header>
 <main class="links-main">
-        <h1 class="links-title">Hasznos linkek</h1>
+        <h1 class="links-title">Vedd fel velem a kapcsolatot az alábbi linkeken:</h1>
         <ul class="links-list">
             <li>
                 <a href="https://www.facebook.com/levente.hegedus.165928/" target="_blank" class="link-item">

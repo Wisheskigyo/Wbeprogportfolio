@@ -34,8 +34,30 @@
         </ul>
       </nav>
 </header>
+  
+  <main style="max-width: 650px; margin: 40px auto; background: rgba(30,30,30,0.95); border-radius: 16px; box-shadow: 0 0 16px #222; padding: 32px; color: #fff;">
+    <h2 style="text-align:center; margin-bottom: 24px;">Terv:PartyVibes: Vajdasági Bulikereső és Jegyvásárló Oldal</h2>
+    <section style="margin-bottom: 24px;">
+      <h3 style="color:#00eaff;">Cél</h3>
+      <p>A weboldal célja, hogy a vajdasági bulikba való bejutást és a bulik keresését kényelmesebbé tegye. Az oldal segít a felhasználóknak megtalálni a legjobb eseményeket, információkat kapni a bulikról, és akár online jegyet is vásárolni.</p>
+    </section>
+    <section style="margin-bottom: 24px;">
+      <h3 style="color:#00eaff;">Fő funkciók (terv)</h3>
+      <ul style="list-style:none; padding-left:0;">
+        <li><strong>Bulik keresése:</strong> Események listázása, szűrés hely, időpont, zenei stílus szerint.</li>
+        <li><strong>Online jegyvásárlás:</strong> Kényelmes, biztonságos jegyvásárlási lehetőség regisztrációval vagy anélkül.</li>
+        <li><strong>Részletes buli információk:</strong> Helyszín, fellépők, jegyárak, leírás, galéria.</li>
+        <li><strong>Felhasználói profil:</strong> Saját jegyek, kedvenc bulik, értesítések.</li>
+        <li><strong>Mobilbarát felület:</strong> Egyszerű használat telefonról is.</li>
+      </ul>
+    </section>
+    <section>
+      <h3 style="color:#00eaff;">Fontos megjegyzés</h3>
+      <p>Az itt leírtak csak információs célt szolgálnak, jelenleg nem működő szolgáltatások! A weboldal fejlesztése terv szintjén van.</p>
+    </section>
+  </main>
 </body>
- <footer style=" bottom: 0; width: 100%;">
+ <footer style=" bottom: 0; width: 100%;position: fixed;">
     <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
         <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
         <span style="text-align: right;" id="datetime"><?php include '../ora.php'; ?></span>
