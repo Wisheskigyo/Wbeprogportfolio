@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
@@ -17,9 +18,18 @@
 </head>
 <body>
     <div class="background-image"></div>
-   <header class="site-header">
-      <nav>
-                <ul>
+ 
+     <nav class="navbar">
+        <div class="navbar-left">
+                Menü
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-hamburger" aria-label="Menü megnyitása">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <ul>
                     <a href="index.php" class="nav-item active">Főoldal</a>
                     <a href="sites/portfolio.php" class="nav-item ">Portfólió</a>
                     <a href="sites/dj.php" class="nav-item ">DJ</a>
@@ -28,11 +38,10 @@
                     <a href="sites/tervek.php" class="nav-item ">Tervek</a>
                     <a href="sites/linkek.php" class="nav-item">Hasznos linkek</a>
                     <a href="sites/kapcsolatok.php" class="nav-item ">Kapcsolat</a>
-                </ul>
-      </nav>
-</header>
-    <div class="bg-layer layer-back"></div>
-    <div class="bg-layer layer-mid"></div>
+            </ul>
+        </div>
+    </nav>
+
 <div class="leiras" >
     <div class="rave-cards1">
         <div class="rave-card1">
@@ -75,6 +84,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         setInterval(updateDateTime, 1000);
+
+        const hamburger = document.querySelector('.navbar-hamburger');
+        const menu = document.querySelector('.navbar-menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
         </script>
     </div>
     

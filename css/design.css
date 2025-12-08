@@ -95,12 +95,6 @@ body::after{
 /* Small improvement: make footer above everything else */
 footer { z-index: 30; position: relative; }
 
-/* Mobile tweaks: reduce layer heights for small screens */
-@media (max-width: 900px) {
-  .bg-layer.layer-back { height: 45vh; opacity: 0.22; }
-  .bg-layer.layer-mid  { top: 14vh; height: 56vh; opacity: 0.18; }
-}
-
  .background-image {
   position: fixed;
   filter: blur(3px) brightness(0.6);

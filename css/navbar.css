@@ -1,93 +1,203 @@
-@media (max-width:900px){
-  .nav a{display:none}
-}
-header nav {
-  max-width: 1200px !important;
-  margin: 22px auto !important;
-  padding: 10px !important;
-  border-radius: 36px !important;
-  background: linear-gradient(180deg, rgba(6,6,8,0.72), rgba(18,18,20,0.56)) !important;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02) !important;
-  -webkit-backdrop-filter: blur(6px) !important;
-  backdrop-filter: blur(6px) !important;
-  z-index: 120 !important;
-  display: block !important;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+a {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-/* Make the UL a horizontal flex container and remove default list spacing */
-header nav > ul {
-  display: flex !important;
-  gap: 21px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 8px 14px !important;
-  margin: 0 !important;
-  list-style: none !important;
-  -webkit-overflow-scrolling: touch !important;
+header {
+    padding: 1em 0 0.5em 0;
+    position: relative;
 }
 
-/* Hide the scrollbar while keeping scrollability */
-header nav > ul::-webkit-scrollbar { height: 8px; display: none; }
-header nav > ul { scrollbar-width: none; -ms-overflow-style: none; }
-
-/* Style anchors as the pill items (works with your existing <a> inside <ul>) */
-header nav > ul > a.nav-item {
-  position: relative !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 10px 28px !important;
-  color: #FFFFFF !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial !important;
-  border-radius: 999px !important;
-  z-index: 2 !important;
-  transition: transform .18s ease, color .18s ease, box-shadow .18s ease !important;
-  white-space: nowrap !important;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    border-radius: 999px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    padding: 0.5em 1em;
+    gap: 0;
+    width: fit-content;
+    margin: 2em auto;
 }
 
-/* decorative disc behind each pill */
-header nav > ul > a.nav-item::before {
-  content: "" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: calc(100% + 20px) !important;
-  height: 44px !important;
-  border-radius: 999px !important;
-  z-index: 1 !important;
-  background: linear-gradient(180deg, rgba(12,12,12,0.85), rgba(18,18,18,0.55)) !important;
-  box-shadow: inset 0 6px 10px rgba(255,255,255,0.02), 0 10px 22px rgba(0,0,0,0.65) !important;
-  pointer-events: none !important;
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-/* hover */
-header nav > ul > a.nav-item:hover {
-  transform: translateY(-4px) !important;
-  color: #fff !important;
-}
-header nav > ul > a.nav-item:hover::before {
-  box-shadow: inset 0 8px 14px rgba(255,255,255,0.03), 0 18px 34px rgba(0,0,0,0.75) !important;
-}
-
-/* active pill */
-header nav > ul > a.nav-item.active {
-  color: #fafafa !important;
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important;
-  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.65), 0 18px 40px rgba(0,0,0,0.7) !important;
-  transform: translateY(-4px) !important;
-}
-header nav > ul > a.nav-item.active::before {
-  width: calc(100% + 8px) !important;
-  height: 44px !important;
-  box-shadow: inset 0 6px 10px rgba(255,255,255,0.03), 0 14px 32px rgba(0,0,0,0.75) !important;
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5em;
+    height: 56px;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000, 0 0 5px #000;
+    text-decoration: none;
+    background: none;
+    border-radius: 999px;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
 }
 
-/* Mobile tweaks (keep horizontal scroll) */
-@media (max-width: 900px) {
-  header nav { margin: 12px auto !important; padding: 8px !important; border-radius: 28px !important; }
-  header nav > ul { gap: 12px !important; padding: 6px 10px !important; }
-  header nav > ul > a.nav-item { padding: 9px 20px !important; font-size: 14px !important; }
+.nav-item:not(:last-child) {
+    border-right: 1px solid transparent;
+}
+
+.nav-item:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+.nav-item.active {
+    background-color: #444 !important;
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background-blend-mode: multiply;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1a1a;
+    border-radius: 999px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    padding: 0.5em 1em;
+    width: fit-content;
+    margin: 2em auto;
+    position: relative;
+    max-width: 98vw;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 1em;
+    padding: 4px;
+    display: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    margin-left: 1em;
+}
+
+.navbar-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.navbar-menu.open {
+    display: flex;
+    z-index: 1001;
+}
+
+@media (max-width: 1400px) {
+    .navbar {
+        flex-wrap: nowrap;
+        padding: 1em 1.2em;
+        width: 100vw;
+        max-width: 90%;
+    }
+    .navbar-left {
+        margin-right: auto;
+        display: block;
+    }
+    .navbar-logo {
+        height: 50px;
+        margin-right: 0.7em;
+        display: block;
+        border-radius: 14px;
+        padding: 5px;
+    }
+    .navbar-right {
+        margin-left: auto;
+    }
+    .navbar-hamburger {
+        display: block;
+        font-size: 2em;
+        padding: 0.2em 0.6em;
+        background: none;
+        border: none;
+        color: #fff;
+        border-radius: 12px;
+    }
+    .navbar-hamburger:active,
+    .navbar-hamburger:focus {
+        background: rgba(255,255,255,0.08);
+        outline: none;
+    }
+    .navbar-menu {
+        margin-top: 20px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        border-radius: 28px;
+        background: #232323;
+        display: none;
+        flex-direction: column;
+    }
+    .navbar-menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 1em 0;
+        gap: 0.5em;
+        align-items: center;
+    }
+    .nav-item {
+        padding: 1em 1.5em;
+        font-size: 1.08em;
+        border-radius: 18px;
+        border: none;
+        margin: 0.22em 0;
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        background: #232323;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    .nav-item:hover,
+    .nav-item.active {
+        background-color: #444 !important;
+        color: #fff !important;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    }
 }
