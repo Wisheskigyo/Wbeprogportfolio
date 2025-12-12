@@ -8,24 +8,33 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/design.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="background-image"></div>
 <header class="site-header">
-      <nav>
-        
-        <ul>
-          <a href="../index.php" class="nav-item ">Főoldal</a>
-          <a href="portfolio.php" class="nav-item ">Portfólió</a>
-          <a href="dj.php" class="nav-item active">DJ</a>
-          <a href="rave.php" class="nav-item">Hangár rave kultúra</a>
-          <a href="eszkozeim.php" class="nav-item">Eszközeim</a>
-          <a href="tervek.php" class="nav-item ">Tervek</a>
-          <a href="linkek.php" class="nav-item">Hasznos linkek</a>
-          <a href="kapcsolatok.php" class="nav-item">Kapcsolat</a>
-        </ul>
-      </nav>
+     <nav class="navbar">
+        <div class="navbar-left">
+                Menü
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-hamburger" aria-label="Menü megnyitása">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                      <a href="../index.php" class="nav-item ">Főoldal</a>
+                    <a href="portfolio.php" class="nav-item ">Portfólió</a>
+                    <a href="dj.php" class="nav-item active">DJ</a>
+                    <a href="rave.php" class="nav-item ">Hangár rave kultúra</a>
+                    <a href="eszkozeim.php" class="nav-item ">Eszközeim</a>
+                    <a href="tervek.php" class="nav-item ">Tervek</a>
+                    <a href="linkek.php" class="nav-item">Hasznos linkek</a>
+                    <a href="kapcsolatok.php" class="nav-item ">Kapcsolat</a>
+            </ul>
+        </div>
+    </nav>
      </header>
 
   <main class="main">
@@ -156,7 +165,7 @@
       Your browser does not support the audio element.
     </audio>
   </aside>
-  <footer style=" bottom: 0; width: 100%;">
+<footer style="position: fixed; bottom: 0; width: 100%;">
     <div style="display: flex; justify-content: space-between; align-items: center; background-color: black; color: white; padding: 10px;">
         <span style="text-align: left;">&copy; 2025 Hegedűs Levente. Minden jog fenntartva.</span>
         <span style="text-align: right;" id="datetime"><?php include '../ora.php'; ?></span>
@@ -169,6 +178,12 @@
             });
         }
         setInterval(updateDateTime, 1000);
+
+        const hamburger = document.querySelector('.navbar-hamburger');
+        const menu = document.querySelector('.navbar-menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
         </script>
     </div>
     
