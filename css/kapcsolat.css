@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+a {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 .links-main {
     display: flex;
     flex-direction: column;
@@ -19,6 +26,9 @@
     letter-spacing: 2px;
     text-align: center;
     text-shadow: 0 2px 8px #000;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .links-list {
