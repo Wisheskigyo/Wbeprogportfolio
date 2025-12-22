@@ -96,7 +96,7 @@ body::after{
 
 /* hero */
 .hero{display:flex; justify-content:center; align-items:center; margin:24px 0;}
-.hero-card{width: min(880px, 96%); text-align:center; padding:40px}
+.hero-card{width: min(880px, 96%); text-align:center; padding:40px; z-index: 1;}
 .hero-card h1{
   font-family: "Poppins", sans-serif;
   font-size:36px;

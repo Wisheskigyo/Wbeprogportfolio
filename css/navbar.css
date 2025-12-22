@@ -13,6 +13,8 @@ header {
 
 nav {
     display: flex;
+            z-index: 2001;
+            position: relative;
     justify-content: center;
     align-items: center;
     background: #1a1a1a;
@@ -138,7 +140,6 @@ nav ul {
     }
     .navbar-left {
         margin-right: auto;
-        display: block;
     }
     .navbar-logo {
         height: 50px;

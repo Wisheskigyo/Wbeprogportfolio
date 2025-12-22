@@ -89,7 +89,6 @@ body::after{
 .leiras,
 .card {
   position: relative;
-  z-index: 10; /* above background layers and film grain */
 }
 
 /* Small improvement: make footer above everything else */
@@ -120,6 +119,7 @@ footer { z-index: 30; position: relative; }
     margin: 40px auto;
     color: #fff;
     font-size: 1.2rem;
+    z-index: 1;
     
 }
 
